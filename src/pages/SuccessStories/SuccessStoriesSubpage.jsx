@@ -1,6 +1,6 @@
 import React from "react";
-import storyImage1 from "../../assets/SuccessStories/story1.jpg";
-import storyImage2 from "../../assets/SuccessStories/story1.jpg";
+import storyImage1 from "../../assets/SuccessStories/Story1.jpg";
+import storyImage2 from "../../assets/SuccessStories/Story1.jpg";
  
 const SuccessStoriesSubpage = () => {
     const stories = [

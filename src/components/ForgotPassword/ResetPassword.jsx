@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 
 import image from "../../assets/ForgotPassword/sideImageBackground.webp";
-import bgImage from "../../assets/home/Bgframe.png";
+import bgImage from "../../assets/home/BgFrame.png";
 
 import {
   loadCaptchaEnginge,
