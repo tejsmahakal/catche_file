@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slideLeft {
+    animation: slideLeft 0.3s ease-out;
+  }
+
+  /* ************************************************************************************************ */
+/* why choose us  */
+/* why choose us text part above horizontal scroll bar   */
+.why-text-wrapper {
+  padding: 32px 28px;
+  border-radius: 20px;
+  transition: all 0.45s ease;
+  position: relative;
+}
+ 
+.why-title {
+  color: #111827;
+  transition: color 0.4s ease;
+}
+ 
+.why-paragraph {
+  color: #4b5563;
+  transition: color 0.4s ease;
+}
+ 
+/* underline */
+.why-underline {
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #f97316;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: center;
+}
+ 
+/* HOVER EFFECT */
+.why-text-wrapper:hover {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  transform: translateY(-8px) scale(1.01);
+}
+ 
+.why-text-wrapper:hover .why-title {
+  color: #f97316;
+}
+ 
+.why-text-wrapper:hover .why-paragraph {
+  color: #374151;
+}
+ 
+.why-text-wrapper:hover .why-underline {
+  transform: scaleX(1);
+}
+ 
+/* **************************************************************************************** * */
+/* hero section  */
+/* ================= HERO TEXT ================= */
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroWordReveal 0.6s ease forwards;
+}
+ 
+@keyframes heroWordReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.hero-title:hover {
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+}
+ 
+/*HERO BUTTON*/
+
+/* why choose up scrolling animation  */
+  @keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+ 
+.animate-scroll-horizontal {
+  animation: scroll-horizontal 25s linear infinite;
+}
+.hero-cta-btn {
+  position: relative;
+  padding: 14px 44px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 999px;
+  background-color: #f97316; /* orange */
+  color: white;
+  border: 2px solid #f97316;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease;
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.45);
+}
+ 
+/* sliding white background */
+.hero-cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.45s ease;
+  z-index: 1;
+}
+ 
+/* text always on top */
+.hero-cta-btn .btn-text {
+  position: relative;
+  z-index: 2;
+}
+ 
+/* hover animation */
+.hero-cta-btn:hover::before {
+  left: 0;
+}
+ 
+.hero-cta-btn:hover {
+  color: #f97316;
+}
+ 
+ 
+ 
+ 
