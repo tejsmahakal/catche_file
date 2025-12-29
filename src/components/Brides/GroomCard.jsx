@@ -98,12 +98,12 @@ const GroomCard = ({ profile, isCached = false }) => {
       
       {/* IMAGE - ORIGINAL UI */}
       <div className="relative md:w-1/3 w-full">
-        {isCached && !profile && (
+        {/* {isCached && !profile && (
           <div className="absolute top-2 left-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded">
             Cached
           </div>
         )}
-        
+         */}
         <img
           src={profileImageSrc}
           alt={fullName}

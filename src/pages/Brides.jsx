@@ -89,7 +89,7 @@ const Brides = () => {
         <div className="max-w-4xl mx-auto space-y-6">
 
           {/* CACHE NOTICE */}
-          {usingCache && (
+          {/* {usingCache && (
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
               <div className="flex">
                 <div className="flex-shrink-0">
@@ -110,7 +110,7 @@ const Brides = () => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           {/* INITIAL LOADING */}
           {isLoading && page === 0 && !usingCache && (
